@@ -1,5 +1,5 @@
 {
-  "name": "@takin-profit/kysely-node-sqlite",
+  "name": "@takinprofit/kysely-node-sqlite",
   "description": "Kysely SQLite adapter for the built in node:sqlite module",
   "author": "Takin Profit",
   "version": "1.0.0",
