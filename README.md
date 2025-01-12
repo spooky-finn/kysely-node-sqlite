@@ -197,5 +197,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Acknowledgments
 
-- [Kysely](https://github.com/kysely-org/kysely) - The SQL query builder this dialect is built for
-- [Node.js SQLite](https://nodejs.org/api/sqlite3.html) - The native SQLite implementation
+- [Kysely](https://kysely.dev/) - The SQL query builder this dialect is built for
+- [Node.js SQLite](https://nodejs.org/api/sqlite.html) - The native SQLite implementation
