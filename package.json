@@ -8,9 +8,13 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    },
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
     }
   },
   "repository": {
@@ -18,6 +22,11 @@
     "url": "https://github.com/Takin-Profit/kysely-node-sqlite"
   },
   "homepage": "https://github.com/Takin-Profit/kysely-node-sqlite",
+  "files": [
+    "dist/",
+    "package.json",
+    "README.md"
+  ],
   "keywords": [
     "kysely",
     "sqlite",
