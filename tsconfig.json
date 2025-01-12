@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    // ECMAScript Target & Module Settings
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "baseUrl": "./src", // Base directory for paths
+    "paths": {
+      "#*": [
+        "*"
+      ]
+    },
+    // Module Interop Settings
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    // Strict Type Checking
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true,
+    // Additional Type Checking
+    "noUnusedLocals": true,
+    "noUnusedParameters": false, // Often too strict, especially with callbacks
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true, // Adds undefined to indexed access
+    "noPropertyAccessFromIndexSignature": true,
+    // JavaScript Support
+    "allowJs": true,
+    "checkJs": true,
+    // Output Settings
+    "outDir": "./dist",
+    "removeComments": true,
+    "newLine": "lf",
+    "sourceMap": true, // Added for better debugging
+    "declaration": true, // Generate .d.ts files
+    "declarationMap": true, // Source maps for .d.ts files
+    "inlineSources": true, // Include source code in source maps
+    // Experimental Features
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true, // Added for better decorator support
+    // Additional Features
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "downlevelIteration": true,
+    // Library Includes
+    "lib": [
+      "ESNext"
+    ]
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.mts",
+    "./src/**/*.js",
+    "./src/**/*.mjs",
+    "./src/**/*.json",
+    "./src/**/*.d.ts",
+    "./src/**/*.test.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "coverage",
+    "**/*.spec.ts",
+  ],
+  // TypeScript 5.0+ Features
+  "watchOptions": {
+    "watchFile": "useFsEvents",
+    "watchDirectory": "useFsEvents",
+    "fallbackPolling": "dynamicPriority"
+  }
+}

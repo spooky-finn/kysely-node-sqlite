@@ -1,0 +1,25 @@
+{
+  "name": "@takin-profit/kysely-node-sqlite",
+  "description": "Kysely SQLite adapter for the built in node:sqlite module",
+  "author": "Takin Profit",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup",
+    "test": "tsx --test \"src/{,**/}*.test.ts\""
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@swc/core": "^1.10.7",
+    "@types/node": "^22.10.5",
+    "prettier": "^3.4.2",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "async-mutex": "^0.5.0",
+    "kysely": "^0.27.5"
+  }
+}

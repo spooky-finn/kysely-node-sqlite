@@ -1,0 +1,26 @@
+{
+    "cSpell.words": [
+        "Autocheckpoint",
+        "autoincrement",
+        "CANTOPEN",
+        "checkpointing",
+        "COMMITHOOK",
+        "dflt",
+        "errcode",
+        "errstr",
+        "FOREIGNKEY",
+        "Introspector",
+        "IOERR",
+        "kysely",
+        "mmap",
+        "NOLFS",
+        "NOTADB",
+        "NOTNULL",
+        "PRIMARYKEY",
+        "SHAREDCACHE",
+        "stmnt",
+        "takinprofit",
+        "TOOBIG",
+        "VTAB"
+    ]
+}
