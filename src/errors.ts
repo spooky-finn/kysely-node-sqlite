@@ -274,14 +274,7 @@ export class NodeSqliteError extends Error implements NodeSqliteErrorData {
  * Type guard to check if an error is a NodeSqliteError
  */
 export function isNodeSqliteError(error: unknown): error is NodeSqliteError {
-	return (
-		error instanceof NodeSqliteError ||
-		(error instanceof Error &&
-			"code" in error &&
-			"errcode" in error &&
-			"errstr" in error &&
-			error.code === "ERR_SQLITE_ERROR")
-	);
+	return (error instanceof NodeSqliteError)
 }
 
 /**
