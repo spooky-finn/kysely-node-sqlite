@@ -1,8 +1,8 @@
 {
-  "name": "@takinprofit/kysely-node-sqlite",
+  "name": "kysely-node-sqlite",
   "description": "Kysely SQLite adapter for the built in node:sqlite module",
-  "author": "Takin Profit",
-  "version": "1.0.",
+  "author": "Spooky Finn",
+  "version": "1.0.0",
   "type": "module",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
@@ -19,9 +19,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Takin-Profit/kysely-node-sqlite"
+    "url": "https://github.com/spooky-finn/kysely-node-sqlite"
   },
-  "homepage": "https://github.com/Takin-Profit/kysely-node-sqlite",
+  "homepage": "https://github.com/spooky-finn/kysely-node-sqlite",
   "files": [
     "dist/",
     "package.json",

@@ -1,9 +1,9 @@
-# @takinprofit/kysely-node-sqlite
+# kysely-node-sqlite
 
 A powerful SQLite dialect for [Kysely](https://github.com/kysely-org/kysely), leveraging the native Node.js SQLite module (node:sqlite). This dialect provides robust statement caching, comprehensive error handling, and configurable pragma settings for optimal SQLite performance.
 
-[![NPM Version](https://img.shields.io/npm/v/@takinprofit/kysely-node-sqlite)](https://www.npmjs.com/package/@takinprofit/kysely-node-sqlite)
-[![License](https://img.shields.io/npm/l/@takinprofit/kysely-node-sqlite)](https://github.com/takinprofit/kysely-node-sqlite/blob/main/LICENSE)
+[![NPM Version](https://img.shields.io/npm/v/kysely-node-sqlite)](https://www.npmjs.com/package/kysely-node-sqlite)
+[![License](https://img.shields.io/npm/l/kysely-node-sqlite)](https://github.com/spooky-finn/kysely-node-sqlite/blob/main/LICENSE)
 
 ## Features
 
@@ -19,7 +19,7 @@ A powerful SQLite dialect for [Kysely](https://github.com/kysely-org/kysely), le
 ## Installation
 
 ```bash
-npm install @takinprofit/kysely-node-sqlite kysely
+npm install kysely-node-sqlite
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ npm install @takinprofit/kysely-node-sqlite kysely
 
 ```typescript
 import { Kysely } from 'kysely'
-import { SqliteDialect } from '@takinprofit/kysely-node-sqlite'
+import { SqliteDialect } from 'kysely-node-sqlite'
 import { DatabaseSync } from 'node:sqlite'
 
 interface Database {
@@ -63,7 +63,7 @@ const db = new Kysely<Database>({
 ### Environment-specific Pragma Configuration
 
 ```typescript
-import { PragmaDefaults } from '@takinprofit/kysely-node-sqlite'
+import { PragmaDefaults } from 'kysely-node-sqlite'
 
 const db = new Kysely<Database>({
   dialect: new SqliteDialect({
@@ -83,7 +83,7 @@ const db = new Kysely<Database>({
 ### Error Handling
 
 ```typescript
-import { isNodeSqliteError, SqliteConstraints } from '@takinprofit/kysely-node-sqlite'
+import { isNodeSqliteError, SqliteConstraints } from 'kysely-node-sqlite'
 
 try {
   await db.insertInto('users')
@@ -170,7 +170,7 @@ import {
   isNodeSqliteError,
   SqliteConstraints,
   type NodeSqliteErrorData
-} from '@takinprofit/kysely-node-sqlite'
+} from 'kysely-node-sqlite'
 
 // Check for specific constraint violations
 SqliteConstraints.isUniqueConstraint(error)
