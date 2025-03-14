@@ -2,7 +2,7 @@
   "name": "kysely-node-sqlite",
   "description": "Kysely SQLite adapter for the built in node:sqlite module",
   "author": "Spooky Finn",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "module",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
